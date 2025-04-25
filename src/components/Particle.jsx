@@ -11,12 +11,12 @@ export default function Particle() {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, []); 
 
   const particlesLoaded = useCallback(async (container) => {
     // console.log(container);
   }, []);
-
+  
   return (
     <>
       {init && (

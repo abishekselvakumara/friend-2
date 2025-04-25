@@ -9,14 +9,12 @@ import Experience from './components/Experince'
 import Language from './components/Language'
 import Projects from './components/projects'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
-
-
+import Footer from './components/Footer' 
 
 const App = () => {
   useEffect(()=>{
     AOS.init({
-      duration: 1000,
+      duration: 1000, 
     });
   },[]);
   return (

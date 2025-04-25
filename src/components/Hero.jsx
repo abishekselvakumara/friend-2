@@ -1,10 +1,9 @@
 import React from 'react';
-import hero from '../assets/hero.png';
-import facebook from '../assets/facebook.png'; 
-import github from '../assets/github.png'; 
+import hero from '../assets/hero.jpg';
+import behance from '../assets/behance.svg'; 
 import linkedin from '../assets/linkedin.png'; 
 import instagram from '../assets/instagram.png'; 
-import Mary from '../assets/Mary.pdf'; 
+import vishal from '../assets/vishal.pdf'; 
 
 /**
  * Hero Component - The main banner section of the portfolio
@@ -41,40 +40,36 @@ export default function Hero() {
               data-aos-delay="400"
               aria-label="Social media links"
             >
-              <a href="#" aria-label="Facebook profile">
-                <img src={facebook} alt="Facebook" className="w-14 h-14 hover:scale-110 transition-transform" />
+              <a href="https://www.behance.net/vishalashish" aria-label="Behance profile">
+                <img src={behance} alt="Facebook" className="w-14 h-14 hover:scale-110 transition-transform" />
               </a>
-              <a href="#" aria-label="GitHub profile">
-                <img src={github} alt="GitHub" className="w-14 h-14 hover:scale-110 transition-transform" />
-              </a>
-              <a href="#" aria-label="LinkedIn profile">
+              
+              <a href="https://www.linkedin.com/in/vishal-parandhaman-587a7627a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile">
                 <img src={linkedin} alt="LinkedIn" className="w-14 h-14 hover:scale-110 transition-transform" />
               </a>
-              <a href="#" aria-label="Instagram profile">
+              <a href="https://www.instagram.com/mr_taurus_17?igsh=MWZuZmowcDNxejUxaw==" aria-label="Instagram profile">
                 <img src={instagram} alt="Instagram" className="w-14 h-14 hover:scale-110 transition-transform" />
               </a>
             </div>
 
             {/* Headings */}
             <h1 className="title-font sm:text-6xl text-4xl mb-4 font-bold text-gray-900">
-              Hi! I'm <span className="text-red-600">Mary</span>
+              Hi! I'm <span className="text-red-600">Vishal P</span>
             </h1>
             <h2 className="sm:text-3xl mb-4 font-bold text-blue-950">
-              Frontend Web Developer
+              Designer
             </h2>
             
             {/* Description */}
             <p className="mb-8 leading-relaxed text-black max-w-lg">
-              Passionate frontend developer specializing in React.js with 3+ years of experience 
-              building responsive and accessible web applications. Focused on creating 
-              performant, user-friendly interfaces with modern JavaScript frameworks.
+            Enthusiastic UI/UX Designer specializing in app and web design, prototyping, and user research. Proficient in Figma and Adobe Illustrator, with a passion for creating intuitive and user-centered designs. Eager to apply creative problem-solving and fresh ideas to real-world projects.
             </p>
 
             {/* Call-to-Action Button */}
             <div className="flex justify-center">
               <a 
-                href={Mary} 
-                download="Mary_Frontend_Developer_CV.pdf"
+                href={vishal} 
+                download=""
                 className="inline-flex text-white bg-red-500 border-0 py-2 px-6 
                 focus:outline-none hover:bg-red-700 rounded-full text-lg
                 hover:shadow-[0_0_20px_rgba(255,100,100,0.5)] transition-all"

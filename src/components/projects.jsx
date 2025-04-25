@@ -1,67 +1,50 @@
 import React, { useState } from "react";
-import portfolio from '../assets/portfolio.png';
-import portfolio1 from '../assets/portfolio1.png';
-import portfolio2 from '../assets/portfolio2.png';
-import portfolio3 from '../assets/portfolio3.png';
-import portfolio4 from '../assets/portfolio4.png';
-import portfolio5 from '../assets/portfolio5.png';
+import project1 from '../assets/project1.png';
+import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
+import project4 from '../assets/project4.png';
 import { FiGithub, FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-featured online store with product catalog and payment integration.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com/oualiCode/porfolio-reactJs-tailwindCss-Vite-2024-",
-    demo: "https://oualicode-portfolio-reactjs-2024.netlify.app/",
-    image: portfolio
+    title: "Parallax Animation ",
+    description: "Created a parallax-animated website for the Benz G-Wagon car.",
+    technologies: ["Figma"],
+    github: "#",
+    demo: "#",
+    image: project3
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative task management with real-time updates.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+    title: "Slider Animation ",
+    description: "Created a Slider Animation for an Adult Drink.",
+    technologies: ["Figma"],
     github: "https://github.com/oualiCode/Portfolio-website",
     demo: "https://portfolio-website-codepink.netlify.app/",
-    image: portfolio1
+    image: project2
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Real-time weather forecasting with interactive maps.",
-    technologies: ["React", "OpenWeather API", "Chart.js"],
+    title: "Dropdown animation ",
+    description: "Created a dropdown animation for Nike Air Jordan.",
+    technologies: ["Figma"],
     github: "#",
     demo: "#",
-    image: portfolio2
+    image: project4
   },
   {
     id: 4,
-    title: "Social Media Analytics",
-    description: "Dashboard for tracking social media metrics.",
-    technologies: ["Next.js", "Tailwind", "GraphQL"],
-    github: "#",
-    demo: "#",
-    image: portfolio3
+    title: "Spinning carousel",
+    description: "Fashion.ai Chooses the Perfect Dress for you through AI.",
+    technologies: ["Figma"],
+    github: "https://github.com/oualiCode/porfolio-reactJs-tailwindCss-Vite-2024-",
+    demo: "https://oualicode-portfolio-reactjs-2024.netlify.app/",
+    image: project1
   },
-  {
-    id: 5,
-    title: "Fitness Tracker",
-    description: "Mobile app for workout tracking and nutrition.",
-    technologies: ["React Native", "Firebase", "Redux"],
-    github: "#",
-    demo: "#",
-    image: portfolio4
-  },
-  {
-    id: 6,
-    title: "Recipe Finder",
-    description: "Discover recipes based on ingredients you have.",
-    technologies: ["JavaScript", "Edamam API", "CSS"],
-    github: "#",
-    demo: "#",
-    image: portfolio5
-  }
+ 
+  
+  
 ];
 
 const Projects = () => {
@@ -151,12 +134,7 @@ const Projects = () => {
 
                   {/* Links */}
                   <div className="flex space-x-4">
-                    <a 
-                      href={project.github} 
-                      className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
-                    >
-                      <FiGithub className="mr-2" /> Code
-                    </a>
+                  
                     <a 
                       href={project.demo} 
                       className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"

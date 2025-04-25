@@ -5,37 +5,22 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 const experiences = [
   {
     id: 1,
-    role: "Frontend Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
-    description: "Developed responsive web applications using React.js and Next.js. Collaborated with UI/UX designers to implement modern interfaces.",
-    icon: <FaBriefcase className="text-blue-500 text-xl" />,
-    type: "work"
+    role: "Freelance Logo Designer",
+    company: "InfixHitech Innovations",
+    period: "2024",
+    description:
+      "Designed a unique logo capturing the brand's innovative and modern identity. Focused on creating a memorable visual aligned with the company’s tech-forward vision.",
+    icon: <FaBriefcase className="text-purple-500 text-xl" />,
+    type: "freelance",
   },
-  {
-    id: 2,
-    role: "Web Development Intern",
-    company: "Digital Creatives",
-    period: "2021 - 2022",
-    description: "Assisted in building e-commerce platforms with Vue.js. Participated in code reviews and bug fixing.",
-    icon: <FaBriefcase className="text-green-500 text-xl" />,
-    type: "work"
-  },
-  {
-    id: 3,
-    role: "Bachelor's in Computer Science",
-    company: "University of Technology",
-    period: "2018 - 2022",
-    description: "Specialized in Web Technologies. Thesis on 'Performance Optimization in Single Page Applications'.",
-    icon: <FaGraduationCap className="text-purple-500 text-xl" />,
-    type: "education"
-  }
 ];
+
 
 const Experience = () => {
   return (
     // Main section with AOS animation on scroll
-    <section data-aos="fade-up" data-aos-delay="250" id="experience" className="w-full py-20 px-4 sm:px-8 bg-gray-50/40">
+    <section data-aos="fade-up" data-aos-delay="250" id="experience" 
+    className="w-full py-20 px-4 sm:px-8 bg-gray-50/40">
       <div className="max-w-6xl mx-auto">
         
         {/* Section header */}

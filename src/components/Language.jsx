@@ -1,10 +1,12 @@
 import React from "react";
 
 const languages = [
-  { name: "Arabic", level: "Native", proficiency: 100 },
-  { name: "English", level: "Fluent", proficiency: 90 },
-  { name: "Spanish", level: "Intermediate", proficiency: 60 },
-  { name: "French", level: "Basic", proficiency: 30 }
+  { name: "Telugu", level: "Native", proficiency: 100 },
+  { name: "Kannada", level: "Naive", proficiency: 80 },
+  { name: "English", level: "Fluent", proficiency: 100 },
+  { name: "Tamil", level: "Fluent", proficiency: 70 },
+  { name: "Hindi", level: "Basic", proficiency: 30 },
+  { name: "Malayalam", level: "Basic", proficiency: 30 }
 ];
 
 const Language = () => {

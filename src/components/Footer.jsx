@@ -13,21 +13,13 @@ const Footer = () => {
           {/* Copyright Information */}
           <div className="mb-4 md:mb-0">
             <p className="text-sm">
-              &copy; {currentYear} Mary. All rights reserved.
+              &copy; {currentYear} Vishal. All rights reserved.
             </p>
           </div>
 
           {/* Social Media Links */}
           <div className="flex space-x-4">
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-900 transition-colors duration-300"
-              aria-label="GitHub"
-            >
-              <FaGithub size={20} />
-            </a>
+      
             <a 
               href="#" 
               target="_blank" 
@@ -37,15 +29,7 @@ const Footer = () => {
             >
               <FaLinkedin size={20} />
             </a>
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-900 transition-colors duration-300"
-              aria-label="Twitter"
-            >
-              <FaTwitter size={20} />
-            </a>
+           
             <a 
               href="#" 
               className="text-gray-800 hover:text-gray-900 transition-colors duration-300"

@@ -1,24 +1,23 @@
 import React from "react";
-import react from "../assets/react.png";
-import vue from "../assets/vue.png";
-import node from "../assets/node.png";
-import javascript from "../assets/javascript.png";
-import python from "../assets/python.png";
-import tailwind from "../assets/tailwind.png";
-import laravel from "../assets/laravel.png";
+import figma from "../assets/figma.png";
+import illustrator from "../assets/illustrator.jpg";
+import canva from "../assets/canva.png";
+import photoshop from "../assets/photoshop.jpg";
+import html from "../assets/html.png";
 import css from "../assets/css.png";
+import javascript from "../assets/javascript.png";
 
-// Array of skill objects with image, name, and description
+// Updated skill list with proper image-name match
 const skills = [
-  { img: react, name: "React", desc: "A JavaScript library for building user interfaces" },
-  { img: vue, name: "Vue", desc: "A progressive JavaScript framework" },
-  { img: node, name: "Node.js", desc: "JavaScript runtime built on Chrome's V8 engine" },
+  { img: figma, name: "Figma", desc: "Design and prototype UI with collaborative features" },
+  { img: illustrator, name: "Adobe Illustrator", desc: "Vector graphic design software" },
+  { img: canva, name: "Canva", desc: "Online design and publishing tool" },
+  { img: photoshop, name: "Adobe Photoshop", desc: "Photo editing and digital art software" },
+  { img: html, name: "HTML", desc: "The standard language for creating web pages" },
+  { img: css, name: "CSS", desc: "Style sheet language for designing HTML elements" },
   { img: javascript, name: "JavaScript", desc: "The programming language of the web" },
-  { img: python, name: "Python", desc: "A versatile and beginner-friendly programming language" },
-  { img: tailwind, name: "Tailwind CSS", desc: "A utility-first CSS framework for rapid UI development" },
-  { img: laravel, name: "Laravel", desc: "A PHP framework for modern web applications" },
-  { img: css, name: "CSS", desc: "Stylesheet language used for describing web page presentation" },
 ];
+
 
 const Skills = () => {
   return (
