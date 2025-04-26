@@ -12,7 +12,7 @@ const projects = [
     description: "Created a parallax-animated website for the Benz G-Wagon car.",
     technologies: ["Figma"],
     github: "#",
-    demo: "#",
+    demo: "https://www.behance.net/gallery/221675117/Parallax-Animation",
     image: project3
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     description: "Created a Slider Animation for an Adult Drink.",
     technologies: ["Figma"],
     github: "https://github.com/oualiCode/Portfolio-website",
-    demo: "https://portfolio-website-codepink.netlify.app/",
+    demo: "https://www.behance.net/gallery/219923701/Breezer-Beer-Page-Animation",
     image: project2
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     description: "Created a dropdown animation for Nike Air Jordan.",
     technologies: ["Figma"],
     github: "#",
-    demo: "#",
+    demo: "https://www.behance.net/gallery/220126669/PROJECT-NIKE",
     image: project4
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     description: "Fashion.ai Chooses the Perfect Dress for you through AI.",
     technologies: ["Figma"],
     github: "https://github.com/oualiCode/porfolio-reactJs-tailwindCss-Vite-2024-",
-    demo: "https://oualicode-portfolio-reactjs-2024.netlify.app/",
+    demo: "https://www.behance.net/gallery/221105575/Fashion-AI-%28Spinning-carousel%29",
     image: project1
   },
  
