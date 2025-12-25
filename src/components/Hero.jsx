@@ -3,7 +3,7 @@ import hero from '../assets/hero.jpg';
 import behance from '../assets/behance.svg'; 
 import linkedin from '../assets/linkedin.png'; 
 import instagram from '../assets/instagram.png'; 
-import vishal from '../assets/vishal.pdf'; 
+import vishal from '../assets/VishalP-UIUX.pdf'; 
 
 /**
  * Hero Component - The main banner section of the portfolio
