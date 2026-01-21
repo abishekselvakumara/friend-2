@@ -29,8 +29,8 @@ export default function Hero() {
       >
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           
-          {/* Text Content Section */}
-          <div className="relative lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 
+          {/* Text Content Section - Increased left padding */}
+          <div className="relative lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 pl-10 md:pl-16 lg:pl-20
             flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             
             {/* Social Media Icons */}
@@ -80,15 +80,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Image - Added left margin for better spacing */}
           <div 
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-8 md:ml-12"
             data-aos="fade-left"
             data-aos-delay="500"
           >
             <img
-              className="object-cover object-center rounded-full w-80 h-80 border-4 border-white shadow-xl"
-              alt="Mary - Frontend Developer"
+              className="object-cover object-center rounded-full w-80 h-80 border-4 border-white shadow-xl mx-auto md:mx-0"
+              alt="Vishal P - UI/UX Designer"
               src={hero}
               width={320}
               height={320}

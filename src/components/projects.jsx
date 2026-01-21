@@ -1,50 +1,77 @@
 import React, { useState } from "react";
-import project1 from '../assets/project1.png';
-import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
-import project4 from '../assets/project4.png';
+import project1 from '../assets/project01.png';
+import project2 from '../assets/project02.png';
+import project3 from '../assets/project03.png';
+import project4 from '../assets/project04.png';
+import project5 from '../assets/project05.png';
+import project6 from '../assets/project06.png';
+import project7 from '../assets/project07.png';
 import { FiGithub, FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
   {
     id: 1,
-    title: "Parallax Animation ",
+    title: "Velmora Gaming Website",
+    description: "Cinematic survival game website UI/UX design focused on immersive storytelling, ancient obstacles, and a dark golden visual theme.",
+    technologies: ["Figma", "UI/UX", "Web Design"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/231631537/Project-Velmora",
+    image: project1
+  },
+  {
+    id: 2,
+    title: "Sakthi Arts",
+    description: "Sakthi Arts — a mobile UI/UX concept Case Study.",
+    technologies: ["Figma", "Mobile UI", "UX Research"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/213580823/Sakthi-Arts",
+    image: project2
+  },
+  {
+    id: 3,
+    title: "Parallax Animation",
     description: "Created a parallax-animated website for the Benz G-Wagon car.",
-    technologies: ["Figma"],
+    technologies: ["Figma", "Animation"],
     github: "#",
     demo: "https://www.behance.net/gallery/221675117/Parallax-Animation",
     image: project3
   },
   {
-    id: 2,
-    title: "Slider Animation ",
-    description: "Created a Slider Animation for an Adult Drink.",
-    technologies: ["Figma"],
-    github: "https://github.com/oualiCode/Portfolio-website",
-    demo: "https://www.behance.net/gallery/219923701/Breezer-Beer-Page-Animation",
-    image: project2
-  },
-  {
-    id: 3,
-    title: "Dropdown animation ",
-    description: "Created a dropdown animation for Nike Air Jordan.",
-    technologies: ["Figma"],
+    id: 4,
+    title: "Foodieland: The land of delicious",
+    description: "This design uses a tiered layer cake layout to organize content into clear, visually stacked sections.",
+    technologies: ["Figma", "UI Design", "Layout"],
     github: "#",
-    demo: "https://www.behance.net/gallery/220126669/PROJECT-NIKE",
+    demo: "https://www.behance.net/gallery/211992401/Foodieland-The-land-of-delicious",
     image: project4
   },
   {
-    id: 4,
+    id: 5,
+    title: "Slider Animation",
+    description: "Created a Slider Animation for an Adult Drink.",
+    technologies: ["Figma", "Animation"],
+    github: "https://github.com/oualiCode/Portfolio-website",
+    demo: "https://www.behance.net/gallery/219923701/Breezer-Beer-Page-Animation",
+    image: project5 // Using same image as project2, you might want to add a different image
+  },
+  {
+    id: 6,
+    title: "Dropdown animation",
+    description: "Created a dropdown animation for Nike Air Jordan.",
+    technologies: ["Figma", "Animation"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/220126669/PROJECT-NIKE",
+    image: project6 // Using same image as project4, you might want to add a different image
+  },
+  {
+    id: 7,
     title: "Spinning carousel",
     description: "Fashion.ai Chooses the Perfect Dress for you through AI.",
-    technologies: ["Figma"],
+    technologies: ["Figma", "AI", "Animation"],
     github: "https://github.com/oualiCode/porfolio-reactJs-tailwindCss-Vite-2024-",
     demo: "https://www.behance.net/gallery/221105575/Fashion-AI-%28Spinning-carousel%29",
-    image: project1
+    image: project7 // Using same image as project1, you might want to add a different image
   },
- 
-  
-  
 ];
 
 const Projects = () => {

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dataconnect/generated": "file:src/dataconnect-generated",
     "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",

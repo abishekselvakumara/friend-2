@@ -5,16 +5,25 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 const experiences = [
   {
     id: 1,
+    role: "UI/UX Designer Intern",
+    company: "Atribs Software Systems Pvt LTD",
+    period: "June 2025 - August 2025",
+    description:
+      "I was involved as a UX trainee in designing the company's new website and also created multiple logos and UI designs. This helped me gain hands-on experience in user experience design, visual design, and brand-oriented interfaces.",
+    icon: <FaBriefcase className="text-purple-500 text-xl" />,
+    type: "internship",
+  },
+  {
+    id: 2,
     role: "Freelance Logo Designer",
     company: "InfixHitech Innovations",
     period: "2024",
     description:
-      "Designed a unique logo capturing the brand's innovative and modern identity. Focused on creating a memorable visual aligned with the company’s tech-forward vision.",
+      "Designed a unique logo capturing the brand's innovative and modern identity. Focused on creating a memorable visual aligned with the company's tech-forward vision.",
     icon: <FaBriefcase className="text-purple-500 text-xl" />,
     type: "freelance",
   },
 ];
-
 
 const Experience = () => {
   return (
@@ -37,17 +46,32 @@ const Experience = () => {
         <div className="relative">
           
           {/* Vertical line in the center of timeline (only visible on larger screens) */}
-          <div className="hidden sm:block absolute left-1/2 h-full w-1 bg-red-300"></div>
+          <div className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-300"></div>
 
           {/* Loop through experiences array and render each item */}
           {experiences.map((exp, index) => (
             <div
               key={exp.id}
-              // Alternate layout direction for each timeline item
-              className={`mb-12 flex flex-col sm:flex-row ${index % 2 === 0 ? "sm:flex-row-reverse" : ""}`}
+              // Add margin/padding to prevent overlap with center line
+              className={`mb-12 flex flex-col sm:flex-row items-center ${index % 2 === 0 ? "sm:flex-row-reverse" : ""}`}
             >
-              {/* Experience/Education card */}
-              <div className={`sm:w-1/2 p-6 rounded-xl shadow-2xl bg-white border border-red-400`}>
+              {/* Spacer for timeline dot alignment */}
+              <div className="hidden sm:block sm:w-1/2">
+                {index % 2 !== 0 && <div className="h-full" />}
+              </div>
+              
+              {/* Timeline dot */}
+              <div className="hidden sm:flex absolute left-1/2 transform -translate-x-1/2 z-10">
+                <div className="w-4 h-4 rounded-full bg-red-500 border-2 border-white shadow-lg"></div>
+              </div>
+              
+              {/* Spacer for timeline dot alignment */}
+              <div className="hidden sm:block sm:w-1/2">
+                {index % 2 === 0 && <div className="h-full" />}
+              </div>
+              
+              {/* Experience/Education card with proper margins */}
+              <div className={`w-full sm:w-5/12 p-6 rounded-xl shadow-2xl bg-white border border-red-400 ${index % 2 === 0 ? "sm:ml-8" : "sm:mr-8"}`}>
                 
                 {/* Icon and title section */}
                 <div className="flex items-center mb-4">
@@ -69,8 +93,8 @@ const Experience = () => {
                 <p className="text-gray-700">{exp.description}</p>
 
                 {/* Tag indicating the type (e.g., Work Experience) */}
-                <div className="mt-4 px-3 py-1 rounded-full text-sm inline-block bg-blue-100 text-blue-800">
-                  Work Experience
+                <div className={`mt-4 px-3 py-1 rounded-full text-sm inline-block ${exp.type === "internship" ? "bg-green-100 text-green-800" : "bg-blue-100 text-blue-800"}`}>
+                  {exp.type === "internship" ? "Internship" : "Freelance Work"}
                 </div>
               </div>
             </div>
