@@ -2,7 +2,7 @@ import React from "react";
 import figma from "../assets/figma.png";
 import illustrator from "../assets/illustrator.jpg";
 import canva from "../assets/canva.png";
-import photoshop from "../assets/photoshop.jpg";
+import framer from "../assets/framer.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -12,7 +12,7 @@ const skills = [
   { img: figma, name: "Figma", desc: "Design and prototype UI with collaborative features" },
   { img: illustrator, name: "Adobe Illustrator", desc: "Vector graphic design software" },
   { img: canva, name: "Canva", desc: "Online design and publishing tool" },
-  { img: photoshop, name: "Adobe Photoshop", desc: "Photo editing and digital art software" },
+  { img: framer, name: "Framer", desc: "no-code website builder and design tool" },
   { img: html, name: "HTML", desc: "The standard language for creating web pages" },
   { img: css, name: "CSS", desc: "Style sheet language for designing HTML elements" },
   { img: javascript, name: "JavaScript", desc: "The programming language of the web" },
