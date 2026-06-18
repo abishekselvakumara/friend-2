@@ -2,7 +2,7 @@ import React from "react";
 
 const languages = [
   { name: "Telugu", level: "Native", proficiency: 100 },
-  { name: "Kannada", level: "Naive", proficiency: 80 },
+  { name: "Kannada", level: "Native", proficiency: 80 },
   { name: "English", level: "Fluent", proficiency: 100 },
   { name: "Tamil", level: "Fluent", proficiency: 70 },
   { name: "Hindi", level: "Basic", proficiency: 30 },

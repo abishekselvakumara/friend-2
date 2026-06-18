@@ -4,11 +4,29 @@ import project2 from '../assets/project02.png';
 import project3 from '../assets/project03.png';
 import project4 from '../assets/project04.png';
 import project5 from '../assets/project05.png';
-import project6 from '../assets/project06.jpeg';
-import project7 from '../assets/project07.jpeg';
+import project6 from '../assets/project06.png';
+import project7 from '../assets/project07.png';
 import { FiGithub, FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
+  {
+    id: 6,
+    title: "Bachelor Food UX Case Study",
+    description: "A complete food ordering UX case study focused on user research, wireframing, user flows, and creating an intuitive food delivery experience.",
+    technologies: ["Figma", "UX Research", "Case Study"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/251303403/Bachelor-Food-Ux-Case-Study",
+    image: project6
+  },
+  {
+    id: 7,
+    title: "Blue OS Case Study",
+    description: "A modern operating system UI/UX case study exploring user-centered design, interface consistency, accessibility, and visual design principles.",
+    technologies: ["Figma", "UI Design", "Case Study"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/251303341/Blue-OS-Case-Study",
+    image: project7
+  },
   {
     id: 1,
     title: "Velmora Gaming Website",
@@ -54,24 +72,7 @@ const projects = [
     demo: "https://www.behance.net/gallery/219923701/Breezer-Beer-Page-Animation",
     image: project5 // Using same image as project2, you might want to add a different image
   },
-    {
-    id: 6,
-    title: "Bachelor Food UX Case Study",
-    description: "A complete food ordering UX case study focused on user research, wireframing, user flows, and creating an intuitive food delivery experience.",
-    technologies: ["Figma", "UX Research", "Case Study"],
-    github: "#",
-    demo: "https://www.behance.net/gallery/251303403/Bachelor-Food-Ux-Case-Study",
-    image: project6
-  },
-  {
-    id: 7,
-    title: "Blue OS Case Study",
-    description: "A modern operating system UI/UX case study exploring user-centered design, interface consistency, accessibility, and visual design principles.",
-    technologies: ["Figma", "UI Design", "Case Study"],
-    github: "#",
-    demo: "https://www.behance.net/gallery/251303341/Blue-OS-Case-Study",
-    image: project7
-  },
+    
 ];
 
 const Projects = () => {
