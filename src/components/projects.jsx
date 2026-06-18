@@ -4,8 +4,8 @@ import project2 from '../assets/project02.png';
 import project3 from '../assets/project03.png';
 import project4 from '../assets/project04.png';
 import project5 from '../assets/project05.png';
-import project6 from '../assets/project06.png';
-import project7 from '../assets/project07.png';
+import project6 from '../assets/project06.jpeg';
+import project7 from '../assets/project07.jpeg';
 import { FiGithub, FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
@@ -54,23 +54,23 @@ const projects = [
     demo: "https://www.behance.net/gallery/219923701/Breezer-Beer-Page-Animation",
     image: project5 // Using same image as project2, you might want to add a different image
   },
-  {
+    {
     id: 6,
-    title: "Dropdown animation",
-    description: "Created a dropdown animation for Nike Air Jordan.",
-    technologies: ["Figma", "Animation"],
+    title: "Bachelor Food UX Case Study",
+    description: "A complete food ordering UX case study focused on user research, wireframing, user flows, and creating an intuitive food delivery experience.",
+    technologies: ["Figma", "UX Research", "Case Study"],
     github: "#",
-    demo: "https://www.behance.net/gallery/220126669/PROJECT-NIKE",
-    image: project6 // Using same image as project4, you might want to add a different image
+    demo: "https://www.behance.net/gallery/251303403/Bachelor-Food-Ux-Case-Study",
+    image: project6
   },
   {
     id: 7,
-    title: "Spinning carousel",
-    description: "Fashion.ai Chooses the Perfect Dress for you through AI.",
-    technologies: ["Figma", "AI", "Animation"],
-    github: "https://github.com/oualiCode/porfolio-reactJs-tailwindCss-Vite-2024-",
-    demo: "https://www.behance.net/gallery/221105575/Fashion-AI-%28Spinning-carousel%29",
-    image: project7 // Using same image as project1, you might want to add a different image
+    title: "Blue OS Case Study",
+    description: "A modern operating system UI/UX case study exploring user-centered design, interface consistency, accessibility, and visual design principles.",
+    technologies: ["Figma", "UI Design", "Case Study"],
+    github: "#",
+    demo: "https://www.behance.net/gallery/251303341/Blue-OS-Case-Study",
+    image: project7
   },
 ];
 
