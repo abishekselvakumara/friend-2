@@ -4,7 +4,7 @@ const languages = [
   { name: "English", level: "Fluent", proficiency: 100 },
   { name: "Tamil", level: "Fluent", proficiency: 100 },
   { name: "Telugu", level: "Native", proficiency: 80 },
-  { name: "Kannadam", level: "Basic", proficiency: 70 },
+  { name: "Kannada", level: "Basic", proficiency: 70 },
   { name: "Hindi", level: "Basic", proficiency: 30 },
   { name: "Malayalam", level: "Basic", proficiency: 30 }
 ];
