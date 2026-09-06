@@ -5,44 +5,108 @@ import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import vishal from "../assets/Vishal P-UIUX-updated.pdf";
 
-/**
- * Hero Component
- * Main banner section of the portfolio.
- * Displays introduction, social links, profile image, and CV download.
- */
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col">
+    <section className="relative min-h-[650px] overflow-hidden bg-white">
 
-      {/* Main Content */}
-      <section
-        data-aos="fade-up"
-        data-aos-delay="250"
-        className="text-gray-500 body-font z-10"
+      {/* Background Glow */}
+      <div
+        className="
+          absolute
+          right-[5%]
+          top-[10%]
+          w-[500px]
+          h-[500px]
+          rounded-full
+          bg-orange-200/25
+          blur-3xl
+          pointer-events-none
+        "
+      />
+
+      {/* Outer Orbit */}
+      <div
+        className="
+          absolute
+          right-[3%]
+          top-[5%]
+          w-[610px]
+          h-[610px]
+          rounded-full
+          border
+          border-blue-300/20
+          pointer-events-none
+        "
+      />
+
+      {/* Inner Orbit */}
+      <div
+        className="
+          absolute
+          right-[7%]
+          top-[9%]
+          w-[540px]
+          h-[540px]
+          rounded-full
+          border
+          border-red-300/20
+          border-dashed
+          pointer-events-none
+        "
+      />
+
+      {/* Main Container */}
+      <div
+        className="
+          relative
+          z-10
+          container
+          mx-auto
+          min-h-[650px]
+          px-6
+          lg:px-10
+          flex
+          items-center
+        "
       >
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 
-          {/* Left Content */}
+        <div
+          className="
+            w-full
+            grid
+            grid-cols-1
+            lg:grid-cols-2
+            gap-8
+            items-center
+          "
+        >
+
+          {/* ================= LEFT CONTENT ================= */}
+
           <div
             className="
-              relative
-              lg:flex-grow
-              md:w-1/2
-              lg:pr-24 md:pr-16
-              pl-10 md:pl-16 lg:pl-20
-              flex flex-col
-              md:items-start md:text-left
-              mb-16 md:mb-0
-              items-center text-center
+              flex
+              flex-col
+              items-center
+              lg:items-start
+              text-center
+              lg:text-left
+
+              /* Small right shift */
+              lg:pl-8
+
+              pt-10
+              lg:pt-0
             "
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
 
-            {/* Social Media Icons */}
+            {/* Social Icons */}
             <div
-              className="flex space-x-4 mb-4"
+              className="flex items-center gap-4 mb-5"
               data-aos="fade-up"
-              data-aos-delay="400"
-              aria-label="Social media links"
+              data-aos-delay="300"
             >
 
               {/* Behance */}
@@ -50,12 +114,20 @@ export default function Hero() {
                 href="https://www.behance.net/vishalashish"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Behance profile"
+                aria-label="Behance"
+                className="group hover:-translate-y-1 transition-all duration-300"
               >
                 <img
                   src={behance}
                   alt="Behance"
-                  className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300"
+                  className="
+                    w-12
+                    h-12
+                    object-contain
+                    group-hover:scale-110
+                    transition-transform
+                    duration-300
+                  "
                 />
               </a>
 
@@ -64,12 +136,20 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/vishal-parandhaman-587a7627a"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn profile"
+                aria-label="LinkedIn"
+                className="group hover:-translate-y-1 transition-all duration-300"
               >
                 <img
                   src={linkedin}
                   alt="LinkedIn"
-                  className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300"
+                  className="
+                    w-12
+                    h-12
+                    object-contain
+                    group-hover:scale-110
+                    transition-transform
+                    duration-300
+                  "
                 />
               </a>
 
@@ -78,19 +158,59 @@ export default function Hero() {
                 href="https://www.instagram.com/mr_taurus_17"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram profile"
+                aria-label="Instagram"
+                className="group hover:-translate-y-1 transition-all duration-300"
               >
                 <img
                   src={instagram}
                   alt="Instagram"
-                  className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300"
+                  className="
+                    w-12
+                    h-12
+                    object-contain
+                    group-hover:scale-110
+                    transition-transform
+                    duration-300
+                  "
                 />
               </a>
 
             </div>
 
+            {/* Tagline */}
+            <div className="flex items-center gap-2 mb-3">
+
+              <span className="tracking-[0.25em] text-xs font-medium text-slate-500">
+                CREATIVE THINKER
+              </span>
+
+              <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+
+              <span className="tracking-[0.2em] text-xs font-medium text-slate-500">
+                PROBLEM SOLVER
+              </span>
+
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+
+              <span className="tracking-[0.2em] text-xs font-medium text-slate-500">
+                DESIGNER
+              </span>
+
+            </div>
+
             {/* Name */}
-            <h1 className="title-font sm:text-6xl text-4xl mb-4 font-bold text-gray-900">
+            <h1
+              className="
+                text-5xl
+                sm:text-6xl
+                lg:text-[64px]
+                font-extrabold
+                tracking-tight
+                leading-[1.05]
+                text-slate-950
+                mb-3
+              "
+            >
               Hi! I'm{" "}
               <span className="text-red-600">
                 Vishal P
@@ -98,12 +218,29 @@ export default function Hero() {
             </h1>
 
             {/* Role */}
-            <h2 className="sm:text-3xl text-2xl mb-4 font-bold text-blue-950">
+            <h2
+              className="
+                text-2xl
+                sm:text-3xl
+                font-bold
+                text-blue-950
+                mb-4
+              "
+            >
               Designer
             </h2>
 
             {/* Description */}
-            <p className="mb-8 leading-relaxed text-black max-w-lg">
+            <p
+              className="
+                max-w-[590px]
+                text-[15px]
+                sm:text-base
+                leading-7
+                text-slate-600
+                mb-6
+              "
+            >
               Enthusiastic UI/UX Designer specializing in app and web design,
               prototyping, and user research. Proficient in Figma and Adobe
               Illustrator, with a passion for creating intuitive and
@@ -112,94 +249,193 @@ export default function Hero() {
             </p>
 
             {/* Download CV */}
-            <div className="flex justify-center">
-              <a
-                href={vishal}
-                download="Vishal-P-UIUX-CV.pdf"
-                className="
-                  inline-flex
-                  text-white
-                  bg-red-500
-                  border-0
-                  py-2 px-6
-                  focus:outline-none
-                  hover:bg-red-700
-                  rounded-full
-                  text-lg
-                  hover:shadow-[0_0_20px_rgba(255,100,100,0.5)]
-                  hover:scale-105
-                  transition-all duration-300
-                "
-                aria-label="Download CV"
+            <a
+              href={vishal}
+              download="Vishal-P-UIUX-CV.pdf"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                px-7
+                py-3
+                rounded-full
+                bg-red-500
+                text-white
+                text-base
+                font-medium
+                shadow-lg
+                shadow-red-500/20
+                transition-all
+                duration-300
+                hover:bg-red-600
+                hover:-translate-y-1
+                hover:shadow-xl
+              "
+            >
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5"
               >
-                Download CV
-              </a>
-            </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12l4.5 4.5m0 0l4.5-4.5M12 16.5V3"
+                />
+              </svg>
+
+              Download CV
+
+            </a>
 
           </div>
 
-          {/* Right Profile Image */}
+          {/* ================= RIGHT PROFILE ================= */}
+
           <div
             className="
               relative
-              lg:max-w-lg
-              lg:w-full
-              md:w-1/2
-              w-5/6
-              ml-0 md:ml-12
               flex
               items-center
-              md:items-start
               justify-center
-              md:pt-16
-              lg:pt-20
+              min-h-[500px]
+              lg:min-h-[580px]
+
+              /* Move image slightly right */
+              lg:translate-x-8
             "
             data-aos="fade-left"
-            data-aos-delay="500"
+            data-aos-delay="400"
           >
 
-            {/* Gradient Circle Background */}
+            {/* Profile Glow */}
             <div
               className="
-                absolute inset-0 m-auto
-                h-[380px] w-[380px]
-                md:h-[420px] md:w-[420px]
+                absolute
+                w-[470px]
+                h-[470px]
+                rounded-full
+                bg-gradient-to-r
+                from-red-500
+                via-blue-600
+                to-emerald-400
+                opacity-20
+                blur-3xl
+              "
+            />
+
+            {/* Gradient Ring */}
+            <div
+              className="
+                relative
+                w-[400px]
+                h-[400px]
+                sm:w-[440px]
+                sm:h-[440px]
+                lg:w-[490px]
+                lg:h-[490px]
+                rounded-full
+                p-[25px]
                 bg-gradient-to-r
                 from-red-600
                 via-blue-600
-                to-green-400
-                rounded-full
-                transform rotate-12
-                shadow-[0_0_100px_rgba(255,165,0,0.7)]
-                z-0
+                to-emerald-400
+                shadow-[0_20px_70px_rgba(255,165,0,0.3)]
               "
-              aria-hidden="true"
-            ></div>
+            >
 
-            {/* Profile Image */}
-            <img
+              {/* White Inner Border */}
+              <div
+                className="
+                  w-full
+                  h-full
+                  rounded-full
+                  p-[10px]
+                  bg-white
+                "
+              >
+
+                <img
+                  src={hero}
+                  alt="Vishal P - UI/UX Designer"
+                  className="
+                    w-full
+                    h-full
+                    rounded-full
+                    object-cover
+                    object-center
+                  "
+                  loading="eager"
+                />
+
+              </div>
+
+            </div>
+
+            {/* Orbit Dots */}
+
+            <span
               className="
-                relative z-10
-                object-cover
-                object-center
+                absolute
+                top-[10%]
+                right-[8%]
+                w-4
+                h-4
                 rounded-full
-                w-80 h-80
-                border-4 border-white
-                shadow-xl
-                mx-auto md:mx-0
+                bg-blue-600
+                shadow-lg
               "
-              alt="Vishal P - UI/UX Designer"
-              src={hero}
-              width={320}
-              height={320}
-              loading="eager"
+            />
+
+            <span
+              className="
+                absolute
+                left-[6%]
+                top-[38%]
+                w-5
+                h-5
+                rounded-full
+                bg-red-500
+                shadow-lg
+              "
+            />
+
+            <span
+              className="
+                absolute
+                bottom-[12%]
+                right-[8%]
+                w-4
+                h-4
+                rounded-full
+                bg-emerald-500
+                shadow-lg
+              "
+            />
+
+            <span
+              className="
+                absolute
+                bottom-[8%]
+                left-[27%]
+                w-2.5
+                h-2.5
+                rounded-full
+                bg-red-700
+              "
             />
 
           </div>
 
         </div>
-      </section>
 
-    </div>
+      </div>
+
+    </section>
   );
 }
