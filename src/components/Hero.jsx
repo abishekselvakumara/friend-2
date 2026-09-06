@@ -14,22 +14,6 @@ export default function Hero() {
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col">
 
-      {/* Gradient Circle Background */}
-      <div
-        className="
-          md:h-[420px] md:w-[340px]
-          h-[660px] w-[580px]
-          right-56
-          bg-gradient-to-r from-red-600 via-blue-600 to-green-400
-          absolute rounded-full
-          transform rotate-12
-          top-8
-          shadow-[0_0_100px_rgba(255,165,0,0.7)]
-          z-0
-        "
-        aria-hidden="true"
-      ></div>
-
       {/* Main Content */}
       <section
         data-aos="fade-up"
@@ -52,13 +36,15 @@ export default function Hero() {
               items-center text-center
             "
           >
+
             {/* Social Media Icons */}
             <div
-              className="flex space-x-4 mb-2"
+              className="flex space-x-4 mb-4"
               data-aos="fade-up"
               data-aos-delay="400"
               aria-label="Social media links"
             >
+
               {/* Behance */}
               <a
                 href="https://www.behance.net/vishalashish"
@@ -75,7 +61,7 @@ export default function Hero() {
 
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/in/vishal-parandhaman-587a7627a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="https://www.linkedin.com/in/vishal-parandhaman-587a7627a"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
@@ -89,7 +75,7 @@ export default function Hero() {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/mr_taurus_17?igsh=MWZuZmowcDNxejUxaw=="
+                href="https://www.instagram.com/mr_taurus_17"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram profile"
@@ -100,6 +86,7 @@ export default function Hero() {
                   className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300"
                 />
               </a>
+
             </div>
 
             {/* Name */}
@@ -148,11 +135,13 @@ export default function Hero() {
                 Download CV
               </a>
             </div>
+
           </div>
 
-          {/* Right Profile Image - Fixed alignment */}
+          {/* Right Profile Image */}
           <div
             className="
+              relative
               lg:max-w-lg
               lg:w-full
               md:w-1/2
@@ -168,8 +157,29 @@ export default function Hero() {
             data-aos="fade-left"
             data-aos-delay="500"
           >
+
+            {/* Gradient Circle Background */}
+            <div
+              className="
+                absolute inset-0 m-auto
+                h-[380px] w-[380px]
+                md:h-[420px] md:w-[420px]
+                bg-gradient-to-r
+                from-red-600
+                via-blue-600
+                to-green-400
+                rounded-full
+                transform rotate-12
+                shadow-[0_0_100px_rgba(255,165,0,0.7)]
+                z-0
+              "
+              aria-hidden="true"
+            ></div>
+
+            {/* Profile Image */}
             <img
               className="
+                relative z-10
                 object-cover
                 object-center
                 rounded-full
@@ -184,10 +194,12 @@ export default function Hero() {
               height={320}
               loading="eager"
             />
+
           </div>
 
         </div>
       </section>
+
     </div>
   );
 }
